@@ -62,16 +62,7 @@ public class PersonResourceTest {
 
         try {
             em.getTransaction().begin();
-            em.createNamedQuery("Phone.deleteAllRows").executeUpdate();
-            em.createNamedQuery("Phone.resetAutoIncrement").executeUpdate();
-            em.createNamedQuery("Person.deleteAllRows").executeUpdate();
-            em.createNamedQuery("Person.resetAutoIncrement").executeUpdate();
-            em.createNamedQuery("Hobby.deleteAllRows").executeUpdate();
-            em.createNamedQuery("Hobby.resetAutoIncrement").executeUpdate();
-            em.createNamedQuery("Address.deleteAllRows").executeUpdate();
-            em.createNamedQuery("Address.resetAutoIncrement").executeUpdate();
-            em.createNamedQuery("CityInfo.deleteAllRows").executeUpdate();
-            em.createNamedQuery("CityInfo.resetAutoIncrement").executeUpdate();
+
 
             Address address = new Address("Queensvej", "Der hvor spiderman bor");
             address.setCityInfo(new CityInfo(9820, "New York"));

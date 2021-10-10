@@ -40,7 +40,7 @@ public class PersonFacadeTest {
         EntityManager em = emf.createEntityManager();
         try {
             em.getTransaction().begin();
-
+/*
             em.createNamedQuery("Phone.deleteAllRows").executeUpdate();
             em.createNamedQuery("Phone.resetAutoIncrement").executeUpdate();
             em.createNamedQuery("Person.deleteAllRows").executeUpdate();
@@ -51,7 +51,7 @@ public class PersonFacadeTest {
             em.createNamedQuery("Address.resetAutoIncrement").executeUpdate();
             em.createNamedQuery("CityInfo.deleteAllRows").executeUpdate();
             em.createNamedQuery("CityInfo.resetAutoIncrement").executeUpdate();
-
+*/
             Address address = new Address("Flemmingvej 34 1. tv", "Bank på tre gange");
             address.setCityInfo(new CityInfo(1200, "København"));
             em.merge(address);

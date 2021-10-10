@@ -61,9 +61,10 @@ public class PersonResourceTest {
         EntityManager em = emf.createEntityManager();
 
         try {
-            em.getTransaction().begin();
+
+           /* em.getTransaction().begin();
             em.createNamedQuery("Phone.deleteAllRows").executeUpdate();
-          //  em.createNamedQuery("Phone.resetAutoIncrement").executeUpdate();
+            em.createNamedQuery("Phone.resetAutoIncrement").executeUpdate();
             em.createNamedQuery("Person.deleteAllRows").executeUpdate();
             em.createNamedQuery("Person.resetAutoIncrement").executeUpdate();
             em.createNamedQuery("Hobby.deleteAllRows").executeUpdate();
@@ -72,6 +73,8 @@ public class PersonResourceTest {
             em.createNamedQuery("Address.resetAutoIncrement").executeUpdate();
             em.createNamedQuery("CityInfo.deleteAllRows").executeUpdate();
             em.createNamedQuery("CityInfo.resetAutoIncrement").executeUpdate();
+            */
+
 
             Address address = new Address("Queensvej", "Der hvor spiderman bor");
             address.setCityInfo(new CityInfo(9820, "New York"));

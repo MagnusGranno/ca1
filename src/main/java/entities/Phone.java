@@ -14,7 +14,7 @@ import javax.persistence.*;
  */
 @Entity
 @NamedQuery(name = "Phone.deleteAllRows", query = "DELETE from Phone")
-@NamedNativeQuery(name = "Phone.resetAutoIncrement", query = "ALTER TABLE Phone AUTO_INCREMENT = 1;")
+
 public class Phone implements Serializable {
 
     private static final long serialVersionUID = 1L;

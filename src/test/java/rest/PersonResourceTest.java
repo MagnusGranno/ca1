@@ -27,7 +27,7 @@ public class PersonResourceTest {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
     private static final int SERVER_PORT = 7777;
-    private static final String SERVER_URL = "http://localhost/Team_Tons_CA1/api/";
+    private static final String SERVER_URL = "http://localhost/api/";
 
     static final URI BASE_URI = UriBuilder.fromUri(SERVER_URL).port(SERVER_PORT).build();
     private static HttpServer httpServer;
@@ -76,7 +76,8 @@ public class PersonResourceTest {
             Address address = new Address("Queensvej", "Der hvor spiderman bor");
             address.setCityInfo(new CityInfo(9820, "New York"));
             em.merge(address);
-
+            Phone phone = new Phone("9818192", "testing some shit");
+            em.persist(phone);
             Person person = new Person("peter@parker.com", "Peter", "Parker");
             person.addHobby(new Hobby("Badre", "Badre skurke"));
             person.addPhone(new Phone("20212021", "This year"));

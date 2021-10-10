@@ -23,7 +23,6 @@ public class ApplicationConfig extends Application {
         resources.add(errorhandling.GenericExceptionMapper.class);
         resources.add(errorhandling.PersonNotFoundExceptionMapper.class);
         resources.add(rest.PersonResource.class);
-        resources.add(rest.RenameMeResource.class);
     }
 
 }

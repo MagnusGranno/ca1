@@ -63,7 +63,7 @@ public class PersonResourceTest {
         try {
             em.getTransaction().begin();
             em.createNamedQuery("Phone.deleteAllRows").executeUpdate();
-            em.createNamedQuery("Phone.resetAutoIncrement").executeUpdate();
+          //  em.createNamedQuery("Phone.resetAutoIncrement").executeUpdate();
             em.createNamedQuery("Person.deleteAllRows").executeUpdate();
             em.createNamedQuery("Person.resetAutoIncrement").executeUpdate();
             em.createNamedQuery("Hobby.deleteAllRows").executeUpdate();

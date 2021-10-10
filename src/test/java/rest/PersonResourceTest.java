@@ -27,7 +27,7 @@ public class PersonResourceTest {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
 
     private static final int SERVER_PORT = 7777;
-    private static final String SERVER_URL = "http://https://mgranno.com/Team_Tons_CA1//api/";
+    private static final String SERVER_URL = "http://localhost/Team_Tons_CA1/api/";
 
     static final URI BASE_URI = UriBuilder.fromUri(SERVER_URL).port(SERVER_PORT).build();
     private static HttpServer httpServer;

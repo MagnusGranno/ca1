@@ -100,13 +100,13 @@ public class PersonResourceTest {
         }
     }
 
-    @Test
+  //  @Test
     public void testServerIsUp() {
         System.out.println("Testing is server up");
         given().when().get("/xxx").then().statusCode(200);
     }
 
-    @Test
+ //   @Test
     public void testDummyMsg() throws Exception {
         given()
                 .contentType("application/json")
